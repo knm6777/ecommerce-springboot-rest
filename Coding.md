@@ -10,7 +10,7 @@
 
 - validation-api
 
-1) Rest API 테스트 후, 2) Security 기능 추가하는 순서
+#### Rest API 테스트 후, Security 기능 추가하는 순서
 
 
 #### 1) Entity Package(AbstractEntity, Category, Product) 작성
