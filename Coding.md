@@ -1,6 +1,6 @@
 # 코딩 순서
 
-### 프로젝트 생성시 추가할 모듈
+### 프로젝트 생성시 추가할 모듈(Spring Boot Version : 2.4.5)
 - spring-boot-starter-web
 - spring-boot-starter-data-jpa
 - mysql-connector-java
@@ -9,6 +9,8 @@
 - spring-boot-starter-thymeleaf
 
 - validation-api
+
+1) Rest API 테스트 후, 2) Security 기능 추가하는 순서
 
 
 #### 1) Entity Package(AbstractEntity, Category, Product) 작성
