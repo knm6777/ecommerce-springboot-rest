@@ -84,4 +84,19 @@ public class CategoryProductsController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(productModel);
 	}
 
+	@RequestMapping(path = "/{productid}", method = RequestMethod.DELETE)
+	public ResponseEntity<?> removeProductinThisCategory(@PathVariable Long categoryid, @PathVariable Long productid) {
+
+		final Product product = productService.getProductById(productid)
+				.orElseThrow(() -> new NotFoundException(productid));
+
+		final Category category = categoryService.getCategoryById(categoryid)
+				.orElseThrow(() -> new NotFoundException(categoryid));
+
+		productService.removeCategory(product, category);
+
+		return ResponseEntity.noContent().build();
+	}
+
+
 }
